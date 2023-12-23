@@ -30,4 +30,5 @@ def hello():
     prediction=ml(data['n'],data['p'],data['k'],data['temp'],data['hum'],data['ph'])
     return prediction[0]
 if __name__ == '__main__':
-    app.run(host='192.168.1.46',debug=True)
+    app.debug = True
+    app.run()
