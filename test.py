@@ -68,10 +68,11 @@ def fert():
 def save_sensor():
     data_from_sensor=request.get_json()
     print(data_from_sensor)
-    return "success"
+    return data_from_sensor
 
 @app.route("/getsensordata",methods=["GET"])
 def get_sensor():
+    print(data_from_sensor)
     return data_from_sensor
 
 if __name__ == '__main__':
