@@ -66,6 +66,7 @@ def fert():
 
 @app.route("/savesensordata",methods=["POST"])
 def save_sensor():
+    global data_from_sensor 
     data_from_sensor=request.get_json()
     print(data_from_sensor)
     return data_from_sensor
